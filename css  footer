@@ -1,0 +1,657 @@
+/*'============================'*/
+/*'==========================='*/
+/*'==========================='*/
+
+
+
+/* Estilos generales para todos los elementos HTML */
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif; /* Define la fuente predeterminada para el cuerpo */
+}
+
+
+/*'============================'*/
+/*'==========================='*/
+/*'==========================='*/
+
+
+/*'============================'*/
+/*'==MENU  FLEXIFLE EN EL CENTRO====ALTURA==='*/
+/*'==========================='*/
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  height: 49px; /* Cambia el valor de altura a 10 píxeles o cualquier otro valor que desees */
+}
+/*'============================'*/
+/*'=====baner========='*/
+/*'==========================='*/
+
+.discount-banner {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+	height: 10px
+}
+.discount-text {
+    font-size: 16px;
+    font-weight: bold;
+}
+/*'============================'*/
+/*'===    CLASE OPSION  NT MUJER HOMBRE==='*/
+/*'==========================='*/
+
+
+.logo	{
+     margin: 87px;
+	 border: 1px solid #ccc;/*color del bode plomo */
+
+}
+.option {
+  padding: 15px 25px;
+  margin: 0px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 1px solid #ccc;/*color del bode plomo */
+}
+
+/*'============================'*/
+/*'====UBICA A LOS USUARIOS========'*/
+/*'==========================='*/
+
+.usuarios	 {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ 
+.usuarios	 li a {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+}
+
+
+/*'=============================================================='*/
+  /* Estilos personalizados para el buscador */
+
+
+
+.BUSCADOR {
+  display: flex;
+  width: 65%;
+}
+
+.BUSCADOR input[type="text"] {
+  flex-grow: 1;
+  /* Otros estilos existentes */
+}
+
+
+
+/* Estilos para el contenedor del buscador */
+
+.BUSCADOR {
+  position: relative; /* Asegura que el buscador se posicione correctamente */
+  height: 100%; /* Altura inicial del contenedor */
+  display: flex; /* Usar flexbox para alinear elementos */
+  align-items: center; /* Alinear verticalmente los elementos */
+}
+
+/* Estilos para el campo de búsqueda */
+
+.BUSCADOR input[type="text"] {
+  padding: 9px;
+  width: 10; /* Ocupa todo el ancho disponible del contenedor */
+  border: 1px solid #ccc;/*color del bode plomo */
+  border-radius: 2px;/*borde del buscador */
+  font-size: 16px;/* letras del buscador */
+  height: 65%; /* Ocupa toda la altura del contenedor */
+  padding-right: 30px; /* Espacio para el ícono */
+}
+
+/* Estilos para la lupa posicionamiento */
+
+.BUSCADOR .fa-search {
+  position: absolute;
+  right: 10px; /* Ajusta la posición horizontal */
+  top: 50%;
+  transform: translateY(-50%); /* Centra verticalmente */
+  color: #888; /* Color del ícono plomo */
+  pointer-events: none; /* Evita que el ícono capture eventos de clic */
+}
+
+
+
+
+
+/* Estilos para pantallas más pequeñas */
+@media screen and (max-width: 767px) {
+    .option, .BUSCADOR {
+        display: none; /* Ocultar los elementos en pantallas más pequeñas */
+    }
+
+    .menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px;
+    }
+
+    .logo {
+        margin:0px;
+    }
+
+    .usuarios {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding:0;
+    }
+
+    .usuarios li {
+        margin-left: 70px;
+    }
+}
+
+/*'=============================================================='*/
+/*'=============================================================='*/
+/*'=============================================================='*/
+/*'=============================================================='*/
+/*'=============================================================='*/
+
+li {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+/*'=============================================================='*/
+/*'=============================================================='*/
+/*'=============================================================='*/
+/*'=============================================================='*/
+/*'=============================================================='*/
+
+
+
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+/*'=============================================================='*/
+/*'=============================================================='*/
+/*'=============================================================='*/
+/*'=============================================================='*/
+/*'=============================================================='*/
+
+.sub-nav {
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+.sub-nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sub-nav li a {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+}
+	 
+
+/*'=============================================================='*/
+/*'=============================================================='*/
+/*'=============   mega menu                      ================='*/
+/*'=============================================================='*/
+/*'=============================================================='*/
+
+
+body {
+    margin: 0;
+}
+
+/* ============================================ */
+/* ====ESTILO PARA LA BARRA DE NAVEGACION====== */
+/* ============================================ */
+.barra-nav {
+    overflow: hidden;
+    background-color: #F8F8F8;
+    font-family: Arial, Helvetica, sans-serif;
+	padding-left: 25%;
+
+}
+
+/* Estilos para el menú desplegable */
+.menu-desplegable {
+    float: left;
+    overflow: hidden;
+}
+
+.menu-desplegable .boton-desplegable {
+    font-size: 16px;
+   
+    outline: none;
+    color: navy;
+    padding: 8px 14px;
+    background-color: inherit;
+    font: inherit;
+    margin: 0;
+	border: 1px solid #ccc;/*color del bode plomo */
+}
+
+.barra-nav a:hover, .menu-desplegable:hover .boton-desplegable {
+    background-color: #F8F8F8;
+	
+}
+
+.contenido-desplegable {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 90%;
+    left: 33px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+	
+
+	
+}
+
+.contenido-desplegable .encabezado {
+    background: red;
+    padding: 16px;
+    color: navy;
+}
+
+.menu-desplegable:hover .contenido-desplegable {
+    display: block; /* Cambié la propiedad display por block */
+}
+
+/* Estilos para las columnas del menú desplegable */
+.columna {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    background-color: #f9f9f9;
+    height: 250px;
+}
+
+.columna a {
+    float: none;
+    color: #24272C;
+    padding: 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.columna a:hover {
+    background-color: #ddd;
+}
+
+/* Limpiar flotaciones después de las columnas */
+.fila:after {
+    content: "";
+    display: table;
+    clear: both;
+	
+}
+
+/* Diseño responsivo para pantallas pequeñas */
+@media screen and (max-width: 600px) {
+    .columna {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Estilos para el banner de descuento */
+.banner-descuento {
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+    padding: 5px;
+    font-weight: bold;
+	 width: 1383px;
+	
+}
+
+
+/*'=============================================================='*/
+/*'=============================================================='*/
+/*'=============   BANER 45 % DE DESCUENTO            =========='*/
+/*'=============================================================='*/
+/*'=============================================================='*/
+
+
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif; /* Fuente predeterminada */
+  margin: 0; /* Elimina el margen predeterminado del body */
+  padding: 0; /* Elimina el relleno predeterminado del body */
+}
+
+/* Estilos del banner de oferta */
+.banner-oferta {
+  background-color: #f9f9f9; /* Color de fondo del banner */
+  text-align: center; /* Centra el contenido horizontalmente */
+  padding: 20px; /* Añade relleno al banner */
+}
+
+.oferta-link {
+  text-decoration: none; /* Quita el subrayado predeterminado de los enlaces */
+  color: #333; /* Color del texto del enlace */
+}
+
+.oferta-title {
+  font-size: 37px; /* Tamaño del texto del título */
+  font-weight: bold; /* Fuente en negrita para el título */
+  margin-top: 0; /* Elimina el margen superior del título */
+}
+
+.oferta-description {
+  font-size: 10px; /* Tamaño del texto de la descripción */
+  margin-bottom: 0; /* Elimina el margen inferior de la descripción */
+}
+
+
+
+
+
+/*'=============================================================='*/
+/*'=============================================================='*/
+/*'=============   baner de imagenes           =========='*/
+/*'=============================================================='*/
+/*'=============================================================='*/
+
+
+
+/* Estilos para el contenedor del carrusel */
+.carousel {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Estilos para los elementos del carrusel */
+.carousel-item {
+  display: none;
+}
+
+.carousel-item.current {
+  display: block;
+}
+
+.carousel img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Estilos para los botones de navegación */
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+
+/*'=============================================================='*/
+/*'=============================================================='*/
+/*'=============              METODOSD DE PAGO              ===='*/
+/*'=============================================================='*/
+/*'=============================================================='*/
+
+
+
+.l-footer-top {
+    display: flex; /* Usar flexbox */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    /* Estilos adicionales para el contenedor si es necesario */
+}
+
+
+
+
+.container {
+  display: flex;
+  justify-content: space-between; /* Distribuirá las secciones horizontalmente */
+  background-color: #f5f5f5; /* Color de fondo */
+  padding: 20px; /* Espaciado interno */
+}
+
+.columna-navegacion-pie {
+  background-color: #f5f5f5;
+  padding: 0px;
+  height: 27px;
+  width: 511px;
+  margin-right: 20px; /* Espacio entre las secciones */
+}
+
+.titulo-navegacion-pie {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.encabezado-navegacion-pie {
+  color: #333;
+}
+
+
+.item-navegacion-pie {
+  margin-bottom: 0px;
+	
+}
+
+.enlace-navegacion-pie {
+  color: #666;
+  text-decoration: none;
+}
+
+.enlace-navegacion-pie:hover {
+  color: #333;
+}
+
+
+
+
+
+
+
+
+footer {
+  background-color: #f5f5f5;
+  padding: 40px 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+	
+	
+}
+
+
+
+
+.footer-section {
+  flex: 1;
+  padding: 0 20px;
+	
+}
+
+.footer-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer-links {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: #666;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: #333;
+}
+
+.subscribe-section {
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.subscribe-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.subscribe-btn {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.l-footer-social {
+  background-color: #f5f5f5;
+  padding: 20px 0;
+}
+
+.b-footer_social-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.b-footer_social-link {
+  margin: 0 10px;
+  color: #666;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.b-footer_social-link:hover {
+  color: #333;
+}
+
+.b-footer_social-link svg {
+  width: 32px;
+  height: 32px;
+}
+
+
+
+
+
+
+
+.l-footer-copy {
+    /* Estilos del contenedor del contenido de copyright y enlaces */
+    display: flex; /* Mostrar los elementos en línea */
+    justify-content: space-between; /* Espacio entre los elementos */
+     background-color: #ffffff;
+}
+
+
+.b-copyright_nav {
+    /* Estilos de la lista de enlaces */
+    display: flex; /* Mostrar los enlaces en línea */
+    list-style: none; /* Quitar viñetas */
+	float: right; /* Alinear a la derecha */
+
+}
+
+.b-copyright_nav-item {
+    /* Estilos de los elementos de la lista */
+    margin-left: 40px; /* Espacio entre elementos */
+}
+
+.b-copyright_nav-link {
+    /* Estilos de los enlaces */
+}
+
+.todo {
+  background-color: #f5f5f5;
+  padding: 40px 0;
+  margin-bottom: 0; /* Eliminar margen inferior */
+}
+
+
+
+
+
+
+
+
+
+
+
